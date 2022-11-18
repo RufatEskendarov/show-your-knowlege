@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Your Knowledge</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <section class="best-score">Show best score</section>
+      <section id="timer" class="section-timer hide">
+        <span class="timer">00:00</span>
+      </section>
+    </section>
+    <section id="section-main" class="section-question">
+      <section id="welcome-txt" class="section-start--text">
+        <h1>Welcome to JavaScript Quiz</h1>
+        <p1
+          >I invite you to test yourself and find gaps in the knowledge of the
+          JavaScript, as well as set and register your personal record. If you
+          are confident, press the button to start!</p1
+        >
+      </section>
+      <section id="section-start--btn" class="section-start--btn">
+        <button id="start-btn">START</button>
+      </section>
+      <section id="section-question" class="hide">
+        <section class="section-start--text">
+          <h2 id="question">Question on JavaScript</h2>
+        </section>
+        <section id="answer-btns" class="section-answer--btn">
+          <button class="answer-btn">Answer1</button>
+          <button class="answer-btn">Answer2</button>
+          <button class="answer-btn">Answer3</button>
+          <button class="answer-btn">Answer4</button>
+        </section>
+        <section class="result">
+          <section id="result-correct" class="result-txt hide">CORRECT</section>
+          <div id="result-wrong" class="result-txt hide">WRONG</div>
+        </section>
+        <!-- <section class="result">
+          <button id="finish-btn" class="finish-btn hide">FINISH</button>
+        </section> -->
+      </section>
+      <section class="all-done hide">
+        <section class="all-done--top">All Done!</section>
+        <section class="all-done--score">Your total score is</section>
+        <section class="all-done--input">
+          <label for="#initials">Enter your initials</label>
+          <input id="initials" type="text" placeholder=" Example:  AB" />
+          <input class="input-submit" type="submit" for="initials" />
+        </section>
+      </section>
+      <section class="score-list hide">
+        <section class="score-list--title">High Scores</section>
+        <section class="score-list--records">
+          <ul id="list"></ul>
+        </section>
+        <section class="score-list--btns">
+          <button id="go-back">Go back</button>
+          <button id="clear">Clear score list</button>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+div {
+  opacity: 0.2;
+  animation-name: glowing;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glowing {
+  0%,
+  100% {
+    opacity: 1;
+    /* filter: blur(2px); */
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 40px #f00, 0 0 80px #f00,
+      0 0 160px #f00, 0 0 320px #f00, 0 0 640px #f00;
+  }
+  7%,
+  93% {
+    opacity: 0.1;
+    filter: blur(0);
+    text-shadow: none;
+  }
+}
+
+ {
+}
+
+.result section {
+  opacity: 0.2;
+  animation-name: blinking;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  0%,
+  100% {
+    color: green;
+    opacity: 1;
+    /* filter: blur(2px); */
+    text-shadow: 0 0 10px rgb(49, 231, 33), 0 0 20px rgb(49, 231, 33),
+      0 0 40px rgb(49, 231, 33), 0 0 80px rgb(49, 231, 33),
+      0 0 160px rgb(49, 231, 33), 0 0 320px rgb(49, 231, 33),
+      0 0 640px rgb(49, 231, 33);
+  }
+  7%,
+  93% {
+    color: green;
+    opacity: 0.1;
+    filter: blur(0);
+    text-shadow: none;
+  }
+}
