@@ -181,6 +181,7 @@ function quizOver() {
   welcomeMessage.classList.add("hide");
   sectionQuestion.classList.add("hide");
   timer.classList.add("hide");
+  inputInitials.innerText = "";
 }
 
 //Setting the next question after the answer

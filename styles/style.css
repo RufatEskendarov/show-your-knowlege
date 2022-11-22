@@ -12,6 +12,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .best-score {
   cursor: pointer;
 }
@@ -46,7 +47,7 @@ body {
   margin-left: -30%;
 }
 
-/* Section with text */
+/*-----First section with welcome text ------- */
 .section-start--text {
   margin-top: 9%;
   margin-bottom: 3%;
@@ -73,14 +74,13 @@ body {
   padding: 0 1.5% 0 1.5%;
 }
 
-/* Section with button */
+/*  First section with START button */
 
 .section-start--btn {
   display: flex;
   justify-content: center;
 }
 
-.finish-btn,
 .section-start--btn button {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 5px;
@@ -93,7 +93,7 @@ body {
   background-color: #b8dae9;
   color: #0f2027;
 }
-
+/* =======All BTNS on hover ======== */
 .best-score:hover,
 .finish-btn:hover,
 .section-start--btn button:hover {
@@ -104,6 +104,7 @@ body {
   box-shadow: 0 0 14px 5px #c0dfec;
 }
 
+/* =========ALL BTNS in active (clicked)======== */
 .best-score:active,
 .finish-btn:active,
 .section-start--btn button:active {
@@ -122,6 +123,7 @@ body {
   gap: 20px;
 }
 
+/* =========Styling question======= */
 .section-start--text h2 {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -131,7 +133,7 @@ body {
   text-align: center;
   margin-bottom: 3%;
 }
-
+/* =========Style for answers======= */
 .answer-btn {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -155,6 +157,8 @@ body {
   border: 4px #4b97b8 solid;
   color: #4b97b8;
 }
+
+/* ============Section ALL Done with input (initials) and submit btn======= */
 
 .all-done {
   padding-top: 120px;
@@ -217,6 +221,7 @@ body {
   box-shadow: 0 0 14px 5px #a0fd7c;
 }
 
+/* ===========Last section style for rendering results====== */
 .result {
   margin: 1% 0.8% 1.5% 0.8%;
   display: flex;
@@ -270,6 +275,7 @@ body {
   font-weight: bold;
 }
 
+/* --------Styles for BTNS "Go-back" and "Clear score list" */
 #go-back {
   width: 15%;
 }
@@ -278,6 +284,8 @@ body {
   margin-left: 13px;
   width: 25%;
 }
+
+/* --------Styles on hover for BTNS "Go-back" and "Clear score list" */
 
 .score-list--btns button:hover {
   background-color: #98d0e9;
@@ -295,10 +303,11 @@ body {
   box-shadow: 0 0 14px 5px #a0fd7c;
 }
 
+/* -----Style to hide passed section------- */
 .hide {
   display: none;
 }
-
+/* -------Style for Corret answer label----------- */
 .correct {
   border: 4px #0fb61d solid;
   filter: blur(0.85px);
@@ -306,9 +315,303 @@ body {
   box-shadow: 0 0 14px 5px #a0fd7c;
 }
 
+/* -------Style for WRONG answer label----------- */
 .wrong {
   border: 4px #c71414 solid;
   filter: blur(0.85px);
   background-color: #f1bfbf;
   box-shadow: 0 0 14px 5px #fd7c7c;
+}
+
+/* =================Adoptation for Tablet========= */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-question {
+    width: 80%;
+    margin-top: -33.5%;
+    margin-left: -40%;
+  }
+
+  .best-score {
+    text-align: center;
+    width: 25%;
+    height: 32px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 130%;
+  }
+
+  .section-timer {
+    text-align: center;
+    width: 13%;
+    height: 32px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: 130%;
+  }
+
+  .result {
+    margin: 8% 0.8% 1.5% 0.8%;
+  }
+
+  .all-done--input {
+    color: #203a43;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    text-align: start;
+  }
+
+  #initials {
+    margin-top: 13px;
+  }
+
+  .input-submit {
+    width: 30%;
+  }
+  #section-question {
+    padding: 10px;
+  }
+  .score-list--btns {
+    padding-top: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  #go-back {
+    width: 40%;
+    font-size: 20px;
+  }
+  #clear {
+    width: 58%;
+    font-size: 20px;
+  }
+  .score-list--records {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 98%;
+  }
+}
+
+/* -------tablet landscape orientation-------------- */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .section-question {
+    width: 80%;
+    margin-top: -18.5%;
+    margin-left: -40%;
+  }
+  .section-start--text {
+    margin-top: 3%;
+  }
+  .all-done {
+    padding-top: 90px;
+  }
+
+  .result {
+    margin: 1.2% 0.8% 1.5% 0.8%;
+  }
+  .input-submit {
+    width: 22.5%;
+  }
+  #initials {
+    width: 25%;
+  }
+}
+
+/* =================Adoptation for Smartphone========= */
+@media screen and (max-width: 768px) {
+  .section-question {
+    width: 93%;
+    height: 47%;
+    margin-top: -55.5%;
+    margin-left: -46%;
+  }
+
+  .header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+  }
+
+  .best-score {
+    text-align: center;
+    width: 55%;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 150%;
+  }
+  #question {
+    font-size: 30px;
+  }
+
+  #start-btn {
+    width: 38%;
+  }
+
+  .section-timer {
+    text-align: center;
+    width: 23%;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 0px;
+    font-size: 150%;
+  }
+
+  .result {
+    margin: 8% 0.8% 1.5% 0.8%;
+  }
+
+  .all-done--input {
+    color: #203a43;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    text-align: start;
+  }
+
+  #initials {
+    margin-top: 13px;
+  }
+
+  .input-submit {
+    width: 30%;
+  }
+  #section-question {
+    padding: 10px;
+  }
+  .score-list--btns {
+    padding-top: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  #go-back {
+    width: 40%;
+    font-size: 20px;
+  }
+  #clear {
+    width: 58%;
+    font-size: 20px;
+  }
+  .score-list--records {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 98%;
+  }
+  .result-txt {
+    font-size: 60px;
+  }
+  .answer-btn {
+    font-size: 20px;
+  }
+
+  .input-submit {
+    width: 48%;
+    font-size: 26px;
+  }
+  #initials {
+    width: 46%;
+    font-size: 26px;
+  }
+
+  .all-done--top,
+  .all-done--score,
+  .all-done--input {
+    margin-left: 12%;
+  }
+
+  #welcome-txt h1 {
+    font-size: 40px;
+  }
+
+  #welcome-txt p1 {
+    font-size: 25px;
+  }
+
+  .score-list {
+    width: 100%;
+    padding: 5px;
+    padding-top: 80px;
+  }
+}
+/* ------------Mobile landscape orientation----------------- */
+@media screen and (min-width: 800px) and (max-width: 920px) {
+  .section-question {
+    width: 93%;
+    height: 60%;
+    margin-top: -7.5%;
+    margin-left: -46%;
+  }
+  .section-start--text {
+    margin-top: 1.2%;
+    margin-bottom: 1%;
+  }
+
+  #welcome-txt {
+    margin-top: 3%;
+  }
+  #welcome-txt h1 {
+    font-size: 30px;
+  }
+
+  #welcome-txt p1 {
+    font-size: 21px;
+  }
+
+  #start-btn {
+    font-size: 25px;
+  }
+  #question {
+    font-size: 25px;
+    margin-bottom: 1%;
+  }
+
+  .answer-btn {
+    font-size: 18px;
+  }
+  #answer-btns {
+    gap: 7px;
+  }
+  .result {
+    margin-top: 2%;
+  }
+  .result-txt {
+    font-size: 50px;
+  }
+  .all-done {
+    padding-top: 30px;
+  }
+
+  .all-done--top {
+    font-size: 40px;
+  }
+  .all-done--score {
+    font-size: 23px;
+  }
+  .all-done--input {
+    font-size: 23px;
+  }
+  .score-list {
+    padding-top: 20px;
+  }
+  .score-list--records {
+    margin-top: 5px;
+  }
+
+  .score-list--btns {
+    padding-top: 5px;
+  }
 }
