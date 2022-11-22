@@ -548,7 +548,7 @@ body {
   }
 }
 /* ------------Mobile landscape orientation----------------- */
-@media screen and (min-width: 800px) and (max-width: 920px) {
+@media screen and (min-width: 822px) and (max-width: 920px) {
   .section-question {
     width: 93%;
     height: 60%;
